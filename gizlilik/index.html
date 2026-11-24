@@ -13,7 +13,7 @@
 <p class="meta">Son güncelleme: 24 Kasım 2026</p>
 
 <h2>Kısaca</h2>
-<p>Uygulama çevrimdışı çalışır; hesap, sunucu ve reklam yoktur. Kayıtların telefonunda kalır. Yalnızca sen izin verirsen anonim hata ve kullanım verisi Google Firebase'e gönderilir (aşağıda «İsteğe bağlı kullanım ve hata verisi»); izin varsayılan olarak kapalıdır.</p>
+<p>Uygulama çevrimdışı çalışır; sunucu ve reklam yoktur, kayıtların telefonunda kalır. Hesap yok. Adınızı, konumunuzu ve okuduğunuz zikirleri bilmeyiz. Uygulama çökerse hatayı ve hangi bölümlerin daha çok işe yaradığını isimsiz olarak bize bildirir; bu varsayılan olarak açıktır ve Ayarlar › Gizlilik'ten kapatılır (aşağıda «Uygulamayı geliştirmek için isimsiz hata ve kullanım bilgisi»).</p>
 
 <h2>Cihazda tutulanlar</h2>
 <p>Aşağıdakiler yalnızca senin cihazında, uygulamanın kendi alanında saklanır; bize ya da başka birine ulaşmaz:</p>
@@ -28,16 +28,18 @@
 <p>Konumunuz yalnızca size en yakın ilçeyi bulmak için telefonda bir kez kullanılır; konumunuz kaydedilmez ve hiçbir yere gönderilmez. İl ve ilçe seçerken «Konumumu kullan»a dokunursan uygulama yaklaşık konum izni ister (Android: yaklaşık konum; iOS: «Uygulamayı kullanırken»). Saklanan tek şey seçilen il ve ilçedir; ham konum (enlem/boylam) günlüğe de yazılmaz. İzin vermezsen ya da konum kapalıysa il ve ilçeyi listeden seçersin; uygulama aynen çalışır. İzni istediğin an sistem ayarlarından kaldırabilirsin.</p>
 <p>Uygulamayı sildiğinde bu kayıtlar da silinir. Telefonunuzun kendi yedekleme özelliği (Android'de Google yedeği, iPhone'da iCloud) açıksa okuma kayıtlarınız ve ayarlarınız bu yedeğe dahil olabilir. Bu yedek sizin hesabınızda tutulur; biz ona erişemeyiz. İstemezseniz telefonunuzun yedekleme ayarından kapatabilirsiniz.</p>
 
-<h2>İsteğe bağlı kullanım ve hata verisi</h2>
-<p>Bu bölüm yalnızca Ayarlar › Gizlilik'teki (ya da ilk açılıştaki) «Uygulamayı geliştirmemize yardım et» anahtarını açarsan geçerlidir. Anahtar <strong>varsayılan olarak kapalıdır</strong>; kapalıyken uygulama internete hiçbir şey göndermez.</p>
-<p>Açarsan şunlar Google Firebase'e (Crashlytics ve Analytics) gönderilir:</p>
+<h2>Uygulamayı geliştirmek için isimsiz hata ve kullanım bilgisi</h2>
+<p>«Uygulamayı geliştirmemize yardım et» anahtarı <strong>varsayılan olarak açıktır</strong>. Uygulama çökerse hatayı ve hangi bölümlerin daha çok işe yaradığını isimsiz olarak bize bildirir. Adını, konumunu ve okuduğun zikirleri bilmeyiz.</p>
+<p><strong>Nerede, nasıl kapatılır:</strong> Anahtar ilk açılışta «Başlayalım» düğmesinin hemen üstünde durur; daha önce kurmuş olanlara bir kez alttan açılan bir sayfada gösterilir. Sonradan Ayarlar › Gizlilik › «Uygulamayı geliştirmemize yardım et»ten istediğin an kapatıp açabilirsin. Anahtarı görmeden önce hiçbir şey gönderilmez.</p>
+<p><strong>Kapatınca:</strong> hiçbir şey gönderilmez; henüz gönderilmemiş hata kayıtları da telefonundan silinir. Uygulama aynen çalışır.</p>
+<p>Açıkken şunlar Google Firebase'e (Crashlytics ve Analytics) gönderilir:</p>
 <ul>
 <li><strong>Hata kayıtları:</strong> uygulama çöktüğünde ya da beklenmeyen bir hata olduğunda teknik kayıt (hatanın yeri, cihaz modeli, işletim sistemi ve uygulama sürümü).</li>
 <li><strong>Kullanım:</strong> hangi ekranların açıldığı ve bazı düğmelere dokunulduğu (ör. «Farzı kıldım», «Bu dilimi atla», bir sayacın tamamlanması). Bu kayıtlarda yalnızca ekran ve düğme adı, vakit dilimi (sabah, öğle…) ve sonuç bulunur.</li>
 </ul>
-<p><strong>Gönderilmeyenler:</strong> okuduğun zikir ve dualar, hangi maddeyi okuduğun, sayaç sayıları, il ve ilçen, konumun, yatış saatin, yazdığın notlar. Reklam kimliği toplanmaz, reklam için kullanılmaz; seni bir kullanıcı kimliğiyle eşleştirmeyiz ve izleme (tracking) yapılmaz.</p>
-<p>Google Firebase bu veriyi bizim adımıza işleyen hizmet sağlayıcıdır; veri Google'ın ABD'deki sunucularına gidebilir. Saklama süresi Firebase'in varsayılanıdır (Crashlytics hata kayıtları 90 gün, Analytics olay verisi en çok 2 ay tutulur ve özet raporlara dönüşür). Ayrıntı: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
-<p>İstediğin an Ayarlar › Gizlilik'ten kapatabilirsin; kapattığında toplama durur ve henüz gönderilmemiş hata kayıtları telefonundan silinir. Bu seçim yalnızca bu telefonda tutulur, yedeğe girmez.</p>
+<p><strong>Gönderilmeyenler:</strong> adın, okuduğun zikir ve dualar, hangi maddeyi okuduğun, sayaç sayıları, il ve ilçen, konumun, yatış saatin, yazdığın notlar. Reklam kimliği kullanılmaz; seni bir kullanıcı kimliğiyle eşleştirmeyiz ve izleme (tracking) yapılmaz.</p>
+<p>Google Firebase bu bilgiyi bizim adımıza işleyen hizmet sağlayıcıdır; bilgi Google'ın ABD'deki sunucularına gidebilir. Saklama süresi Firebase'in varsayılanıdır (Crashlytics hata kayıtları 90 gün, Analytics olay verisi en çok 2 ay tutulur ve özet raporlara dönüşür). Ayrıntı: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<p>Bu seçim yalnızca bu telefonda tutulur, yedeğe girmez.</p>
 
 <h2>Hatırlatmalar</h2>
 <p>Hatırlatmalar cihazda zamanlanan yerel bildirimlerdir. Uzaktan bildirim (push) hizmeti kullanılmaz. Bildirim iznini istediğin an sistem ayarlarından kapatabilirsin.</p>
@@ -46,7 +48,7 @@
 <p>«Hata bildir», cihazındaki e-posta uygulamasında hazır bir taslak açar. Taslakta seçtiğin madde, yazdığın not, uygulama sürümü, içerik paketi sürümü ve işletim sistemi sürümü bulunur. Taslağı göndermek ya da göndermemek senin elindedir; uygulama kendisi hiçbir şey göndermez. Gönderirsen e-posta adresin ve mesajın yalnızca hatayı düzeltmek için kullanılır.</p>
 
 <h2>Çocuklar</h2>
-<p>Uygulama hiçbir yaştan kullanıcıdan veri toplamaz.</p>
+<p>Hesap yok. Adınızı, konumunuzu ve okuduğunuz zikirleri bilmeyiz. Uygulama yaş sormaz; çocuklar için ayrı bir bilgi toplanmaz.</p>
 
 <h2>İletişim</h2>
 <p><a href="mailto:zikirvaktisunnetdua@gmail.com">zikirvaktisunnetdua@gmail.com</a></p>
